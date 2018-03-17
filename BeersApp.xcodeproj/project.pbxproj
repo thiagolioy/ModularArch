@@ -11,7 +11,36 @@
 		0A5B698D205D5CBB0029AEE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B698B205D5CBB0029AEE8 /* Main.storyboard */; };
 		0A5B698F205D5CBB0029AEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B698E205D5CBB0029AEE8 /* Assets.xcassets */; };
 		0A5B6992205D5CBB0029AEE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B6990205D5CBB0029AEE8 /* LaunchScreen.storyboard */; };
-		0A5B699D205D5CBB0029AEE8 /* BeersAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B699C205D5CBB0029AEE8 /* BeersAppTests.swift */; };
+		0A5B699D205D5CBB0029AEE8 /* MoneySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B699C205D5CBB0029AEE8 /* MoneySpec.swift */; };
+		0AB7DF3C205D5E38003939AC /* UIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AB7DF3A205D5E38003939AC /* UIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AB7DF3F205D5E38003939AC /* UIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB7DF38205D5E38003939AC /* UIFramework.framework */; };
+		0AB7DF40205D5E38003939AC /* UIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB7DF38205D5E38003939AC /* UIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AB7DF46205D5E9A003939AC /* RedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7DF45205D5E9A003939AC /* RedButton.swift */; };
+		0ADE6A34205D6B1200093FEA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADE6A2E205D665900093FEA /* SnapKit.framework */; };
+		0AF9DBFF205D6D8B004D9E9F /* SnapKit.framework.dSYM in Copy Carthage DSYMS */ = {isa = PBXBuildFile; fileRef = 0ADE6A31205D66E200093FEA /* SnapKit.framework.dSYM */; };
+		0AF9DC01205D6E26004D9E9F /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ADE6A2E205D665900093FEA /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AF9DC03205D7A9C004D9E9F /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9DC02205D7A9C004D9E9F /* CodeView.swift */; };
+		0AF9DC05205D7B0E004D9E9F /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9DC04205D7B0E004D9E9F /* Money.swift */; };
+		0AF9DC0C205D7B74004D9E9F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC08205D7B74004D9E9F /* Nimble.framework */; };
+		0AF9DC0D205D7B74004D9E9F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC09205D7B74004D9E9F /* Quick.framework */; };
+		0AF9DC13205D7B9F004D9E9F /* Quick.framework.dSYM in Copy Frameworks dSYMS */ = {isa = PBXBuildFile; fileRef = 0AF9DC0F205D7B9F004D9E9F /* Quick.framework.dSYM */; };
+		0AF9DC16205D7B9F004D9E9F /* Nimble.framework.dSYM in Copy Frameworks dSYMS */ = {isa = PBXBuildFile; fileRef = 0AF9DC12205D7B9F004D9E9F /* Nimble.framework.dSYM */; };
+		0AF9DC1C205D7E21004D9E9F /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC08205D7B74004D9E9F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AF9DC1D205D7E21004D9E9F /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC09205D7B74004D9E9F /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AF9DC25205D7EFA004D9E9F /* UIFrameworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9DC24205D7EFA004D9E9F /* UIFrameworkSpec.swift */; };
+		0AF9DC27205D7EFA004D9E9F /* UIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB7DF38205D5E38003939AC /* UIFramework.framework */; };
+		0AF9DC2D205D7F34004D9E9F /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC06205D7B74004D9E9F /* FBSnapshotTestCase.framework */; };
+		0AF9DC2E205D7F34004D9E9F /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC07205D7B74004D9E9F /* Nimble_Snapshots.framework */; };
+		0AF9DC2F205D7F34004D9E9F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC08205D7B74004D9E9F /* Nimble.framework */; };
+		0AF9DC30205D7F34004D9E9F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC09205D7B74004D9E9F /* Quick.framework */; };
+		0AF9DC32205D7F49004D9E9F /* FBSnapshotTestCase.framework.dSYM in Copy Frameworks dSYMs */ = {isa = PBXBuildFile; fileRef = 0AF9DC11205D7B9F004D9E9F /* FBSnapshotTestCase.framework.dSYM */; };
+		0AF9DC33205D7F49004D9E9F /* Nimble_Snapshots.framework.dSYM in Copy Frameworks dSYMs */ = {isa = PBXBuildFile; fileRef = 0AF9DC10205D7B9F004D9E9F /* Nimble_Snapshots.framework.dSYM */; };
+		0AF9DC34205D7F49004D9E9F /* Nimble.framework.dSYM in Copy Frameworks dSYMs */ = {isa = PBXBuildFile; fileRef = 0AF9DC12205D7B9F004D9E9F /* Nimble.framework.dSYM */; };
+		0AF9DC35205D7F49004D9E9F /* Quick.framework.dSYM in Copy Frameworks dSYMs */ = {isa = PBXBuildFile; fileRef = 0AF9DC0F205D7B9F004D9E9F /* Quick.framework.dSYM */; };
+		0AF9DC37205D7F9F004D9E9F /* FBSnapshotTestCase.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC06205D7B74004D9E9F /* FBSnapshotTestCase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AF9DC38205D7F9F004D9E9F /* Nimble_Snapshots.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC07205D7B74004D9E9F /* Nimble_Snapshots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AF9DC39205D7F9F004D9E9F /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC08205D7B74004D9E9F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AF9DC3A205D7F9F004D9E9F /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC09205D7B74004D9E9F /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +51,108 @@
 			remoteGlobalIDString = 0A5B6983205D5CBB0029AEE8;
 			remoteInfo = BeersApp;
 		};
+		0AB7DF3D205D5E38003939AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A5B697C205D5CBB0029AEE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AB7DF37205D5E38003939AC;
+			remoteInfo = UIFramework;
+		};
+		0AF9DC28205D7EFA004D9E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A5B697C205D5CBB0029AEE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AB7DF37205D5E38003939AC;
+			remoteInfo = UIFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AB7DF44205D5E38003939AC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AB7DF40205D5E38003939AC /* UIFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ADE6A30205D668400093FEA /* Copy Carthage DSYMS */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				0AF9DBFF205D6D8B004D9E9F /* SnapKit.framework.dSYM in Copy Carthage DSYMS */,
+			);
+			name = "Copy Carthage DSYMS";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF9DC00205D6E15004D9E9F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AF9DC01205D6E26004D9E9F /* SnapKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF9DC0E205D7B7B004D9E9F /* Copy Frameworks dSYMS */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				0AF9DC13205D7B9F004D9E9F /* Quick.framework.dSYM in Copy Frameworks dSYMS */,
+				0AF9DC16205D7B9F004D9E9F /* Nimble.framework.dSYM in Copy Frameworks dSYMS */,
+			);
+			name = "Copy Frameworks dSYMS";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF9DC19205D7E11004D9E9F /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AF9DC1C205D7E21004D9E9F /* Nimble.framework in Copy Frameworks */,
+				0AF9DC1D205D7E21004D9E9F /* Quick.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF9DC31205D7F3E004D9E9F /* Copy Frameworks dSYMs */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				0AF9DC32205D7F49004D9E9F /* FBSnapshotTestCase.framework.dSYM in Copy Frameworks dSYMs */,
+				0AF9DC33205D7F49004D9E9F /* Nimble_Snapshots.framework.dSYM in Copy Frameworks dSYMs */,
+				0AF9DC34205D7F49004D9E9F /* Nimble.framework.dSYM in Copy Frameworks dSYMs */,
+				0AF9DC35205D7F49004D9E9F /* Quick.framework.dSYM in Copy Frameworks dSYMs */,
+			);
+			name = "Copy Frameworks dSYMs";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF9DC36205D7F4C004D9E9F /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AF9DC37205D7F9F004D9E9F /* FBSnapshotTestCase.framework in Copy Frameworks */,
+				0AF9DC38205D7F9F004D9E9F /* Nimble_Snapshots.framework in Copy Frameworks */,
+				0AF9DC39205D7F9F004D9E9F /* Nimble.framework in Copy Frameworks */,
+				0AF9DC3A205D7F9F004D9E9F /* Quick.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A5B6984205D5CBB0029AEE8 /* BeersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,8 +162,28 @@
 		0A5B6991205D5CBB0029AEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A5B6993205D5CBB0029AEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A5B6998205D5CBB0029AEE8 /* BeersAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeersAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A5B699C205D5CBB0029AEE8 /* BeersAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersAppTests.swift; sourceTree = "<group>"; };
+		0A5B699C205D5CBB0029AEE8 /* MoneySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneySpec.swift; sourceTree = "<group>"; };
 		0A5B699E205D5CBB0029AEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AB7DF38205D5E38003939AC /* UIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB7DF3A205D5E38003939AC /* UIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFramework.h; sourceTree = "<group>"; };
+		0AB7DF3B205D5E38003939AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AB7DF45205D5E9A003939AC /* RedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedButton.swift; sourceTree = "<group>"; };
+		0ADE6A2C205D601500093FEA /* UIFrameworkPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = UIFrameworkPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		0ADE6A2E205D665900093FEA /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		0ADE6A31205D66E200093FEA /* SnapKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SnapKit.framework.dSYM; sourceTree = "<group>"; };
+		0AF9DC02205D7A9C004D9E9F /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		0AF9DC04205D7B0E004D9E9F /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		0AF9DC06205D7B74004D9E9F /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
+		0AF9DC07205D7B74004D9E9F /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble_Snapshots.framework; path = Carthage/Build/iOS/Nimble_Snapshots.framework; sourceTree = "<group>"; };
+		0AF9DC08205D7B74004D9E9F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		0AF9DC09205D7B74004D9E9F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		0AF9DC0F205D7B9F004D9E9F /* Quick.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Quick.framework.dSYM; sourceTree = "<group>"; };
+		0AF9DC10205D7B9F004D9E9F /* Nimble_Snapshots.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Nimble_Snapshots.framework.dSYM; sourceTree = "<group>"; };
+		0AF9DC11205D7B9F004D9E9F /* FBSnapshotTestCase.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = FBSnapshotTestCase.framework.dSYM; sourceTree = "<group>"; };
+		0AF9DC12205D7B9F004D9E9F /* Nimble.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Nimble.framework.dSYM; sourceTree = "<group>"; };
+		0AF9DC22205D7EFA004D9E9F /* UIFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF9DC24205D7EFA004D9E9F /* UIFrameworkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFrameworkSpec.swift; sourceTree = "<group>"; };
+		0AF9DC26205D7EFA004D9E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB7DF3F205D5E38003939AC /* UIFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +199,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF9DC0C205D7B74004D9E9F /* Nimble.framework in Frameworks */,
+				0AF9DC0D205D7B74004D9E9F /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AB7DF34205D5E38003939AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ADE6A34205D6B1200093FEA /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF9DC1F205D7EFA004D9E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF9DC2D205D7F34004D9E9F /* FBSnapshotTestCase.framework in Frameworks */,
+				0AF9DC2E205D7F34004D9E9F /* Nimble_Snapshots.framework in Frameworks */,
+				0AF9DC2F205D7F34004D9E9F /* Nimble.framework in Frameworks */,
+				0AF9DC30205D7F34004D9E9F /* Quick.framework in Frameworks */,
+				0AF9DC27205D7EFA004D9E9F /* UIFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +232,12 @@
 			children = (
 				0A5B6986205D5CBB0029AEE8 /* BeersApp */,
 				0A5B699B205D5CBB0029AEE8 /* BeersAppTests */,
+				0AB7DF39205D5E38003939AC /* UIFramework */,
+				0AF9DC23205D7EFA004D9E9F /* UIFrameworkTests */,
+				0AF9DC3B205D814D004D9E9F /* Playgrounds */,
 				0A5B6985205D5CBB0029AEE8 /* Products */,
+				0ADE6A33205D66E900093FEA /* DSYMS */,
+				0ADE6A2D205D665900093FEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +246,8 @@
 			children = (
 				0A5B6984205D5CBB0029AEE8 /* BeersApp.app */,
 				0A5B6998205D5CBB0029AEE8 /* BeersAppTests.xctest */,
+				0AB7DF38205D5E38003939AC /* UIFramework.framework */,
+				0AF9DC22205D7EFA004D9E9F /* UIFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +260,7 @@
 				0A5B698E205D5CBB0029AEE8 /* Assets.xcassets */,
 				0A5B6990205D5CBB0029AEE8 /* LaunchScreen.storyboard */,
 				0A5B6993205D5CBB0029AEE8 /* Info.plist */,
+				0AF9DC04205D7B0E004D9E9F /* Money.swift */,
 			);
 			path = BeersApp;
 			sourceTree = "<group>";
@@ -87,13 +268,76 @@
 		0A5B699B205D5CBB0029AEE8 /* BeersAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				0A5B699C205D5CBB0029AEE8 /* BeersAppTests.swift */,
+				0A5B699C205D5CBB0029AEE8 /* MoneySpec.swift */,
 				0A5B699E205D5CBB0029AEE8 /* Info.plist */,
 			);
 			path = BeersAppTests;
 			sourceTree = "<group>";
 		};
+		0AB7DF39205D5E38003939AC /* UIFramework */ = {
+			isa = PBXGroup;
+			children = (
+				0AB7DF3A205D5E38003939AC /* UIFramework.h */,
+				0AB7DF3B205D5E38003939AC /* Info.plist */,
+				0AB7DF45205D5E9A003939AC /* RedButton.swift */,
+				0AF9DC02205D7A9C004D9E9F /* CodeView.swift */,
+			);
+			path = UIFramework;
+			sourceTree = "<group>";
+		};
+		0ADE6A2D205D665900093FEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9DC06205D7B74004D9E9F /* FBSnapshotTestCase.framework */,
+				0AF9DC07205D7B74004D9E9F /* Nimble_Snapshots.framework */,
+				0AF9DC08205D7B74004D9E9F /* Nimble.framework */,
+				0AF9DC09205D7B74004D9E9F /* Quick.framework */,
+				0ADE6A2E205D665900093FEA /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0ADE6A33205D66E900093FEA /* DSYMS */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9DC11205D7B9F004D9E9F /* FBSnapshotTestCase.framework.dSYM */,
+				0AF9DC10205D7B9F004D9E9F /* Nimble_Snapshots.framework.dSYM */,
+				0AF9DC12205D7B9F004D9E9F /* Nimble.framework.dSYM */,
+				0AF9DC0F205D7B9F004D9E9F /* Quick.framework.dSYM */,
+				0ADE6A31205D66E200093FEA /* SnapKit.framework.dSYM */,
+			);
+			path = DSYMS;
+			sourceTree = "<group>";
+		};
+		0AF9DC23205D7EFA004D9E9F /* UIFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9DC24205D7EFA004D9E9F /* UIFrameworkSpec.swift */,
+				0AF9DC26205D7EFA004D9E9F /* Info.plist */,
+			);
+			path = UIFrameworkTests;
+			sourceTree = "<group>";
+		};
+		0AF9DC3B205D814D004D9E9F /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				0ADE6A2C205D601500093FEA /* UIFrameworkPlayground.playground */,
+			);
+			path = Playgrounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AB7DF35205D5E38003939AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB7DF3C205D5E38003939AC /* UIFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		0A5B6983205D5CBB0029AEE8 /* BeersApp */ = {
@@ -103,10 +347,12 @@
 				0A5B6980205D5CBB0029AEE8 /* Sources */,
 				0A5B6981205D5CBB0029AEE8 /* Frameworks */,
 				0A5B6982205D5CBB0029AEE8 /* Resources */,
+				0AB7DF44205D5E38003939AC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0AB7DF3E205D5E38003939AC /* PBXTargetDependency */,
 			);
 			name = BeersApp;
 			productName = BeersApp;
@@ -120,6 +366,8 @@
 				0A5B6994205D5CBB0029AEE8 /* Sources */,
 				0A5B6995205D5CBB0029AEE8 /* Frameworks */,
 				0A5B6996205D5CBB0029AEE8 /* Resources */,
+				0AF9DC19205D7E11004D9E9F /* Copy Frameworks */,
+				0AF9DC0E205D7B7B004D9E9F /* Copy Frameworks dSYMS */,
 			);
 			buildRules = (
 			);
@@ -129,6 +377,46 @@
 			name = BeersAppTests;
 			productName = BeersAppTests;
 			productReference = 0A5B6998205D5CBB0029AEE8 /* BeersAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0AB7DF37205D5E38003939AC /* UIFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AB7DF43205D5E38003939AC /* Build configuration list for PBXNativeTarget "UIFramework" */;
+			buildPhases = (
+				0AB7DF33205D5E38003939AC /* Sources */,
+				0AB7DF34205D5E38003939AC /* Frameworks */,
+				0AB7DF35205D5E38003939AC /* Headers */,
+				0AB7DF36205D5E38003939AC /* Resources */,
+				0AF9DC00205D6E15004D9E9F /* CopyFiles */,
+				0ADE6A30205D668400093FEA /* Copy Carthage DSYMS */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIFramework;
+			productName = UIFramework;
+			productReference = 0AB7DF38205D5E38003939AC /* UIFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0AF9DC21205D7EFA004D9E9F /* UIFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF9DC2A205D7EFA004D9E9F /* Build configuration list for PBXNativeTarget "UIFrameworkTests" */;
+			buildPhases = (
+				0AF9DC1E205D7EFA004D9E9F /* Sources */,
+				0AF9DC1F205D7EFA004D9E9F /* Frameworks */,
+				0AF9DC20205D7EFA004D9E9F /* Resources */,
+				0AF9DC36205D7F4C004D9E9F /* Copy Frameworks */,
+				0AF9DC31205D7F3E004D9E9F /* Copy Frameworks dSYMs */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AF9DC29205D7EFA004D9E9F /* PBXTargetDependency */,
+			);
+			name = UIFrameworkTests;
+			productName = UIFrameworkTests;
+			productReference = 0AF9DC22205D7EFA004D9E9F /* UIFrameworkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -150,6 +438,15 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0A5B6983205D5CBB0029AEE8;
 					};
+					0AB7DF37205D5E38003939AC = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					0AF9DC21205D7EFA004D9E9F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 0A5B697F205D5CBB0029AEE8 /* Build configuration list for PBXProject "BeersApp" */;
@@ -167,6 +464,8 @@
 			targets = (
 				0A5B6983205D5CBB0029AEE8 /* BeersApp */,
 				0A5B6997205D5CBB0029AEE8 /* BeersAppTests */,
+				0AB7DF37205D5E38003939AC /* UIFramework */,
+				0AF9DC21205D7EFA004D9E9F /* UIFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -189,6 +488,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AB7DF36205D5E38003939AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF9DC20205D7EFA004D9E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -196,6 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF9DC05205D7B0E004D9E9F /* Money.swift in Sources */,
 				0A5B6988205D5CBB0029AEE8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +518,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A5B699D205D5CBB0029AEE8 /* BeersAppTests.swift in Sources */,
+				0A5B699D205D5CBB0029AEE8 /* MoneySpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AB7DF33205D5E38003939AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB7DF46205D5E9A003939AC /* RedButton.swift in Sources */,
+				0AF9DC03205D7A9C004D9E9F /* CodeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF9DC1E205D7EFA004D9E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF9DC25205D7EFA004D9E9F /* UIFrameworkSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +546,16 @@
 			isa = PBXTargetDependency;
 			target = 0A5B6983205D5CBB0029AEE8 /* BeersApp */;
 			targetProxy = 0A5B6999205D5CBB0029AEE8 /* PBXContainerItemProxy */;
+		};
+		0AB7DF3E205D5E38003939AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AB7DF37205D5E38003939AC /* UIFramework */;
+			targetProxy = 0AB7DF3D205D5E38003939AC /* PBXContainerItemProxy */;
+		};
+		0AF9DC29205D7EFA004D9E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AB7DF37205D5E38003939AC /* UIFramework */;
+			targetProxy = 0AF9DC28205D7EFA004D9E9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -348,6 +689,7 @@
 		0A5B69A2205D5CBB0029AEE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5P786SDN2;
@@ -363,6 +705,7 @@
 		0A5B69A3205D5CBB0029AEE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5P786SDN2;
@@ -382,6 +725,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5P786SDN2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BeersAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tplioy.BeersAppTests;
@@ -399,6 +746,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5P786SDN2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BeersAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tplioy.BeersAppTests;
@@ -406,6 +757,101 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeersApp.app/BeersApp";
+			};
+			name = Release;
+		};
+		0AB7DF41205D5E38003939AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J5P786SDN2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = UIFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tplioy.UIFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0AB7DF42205D5E38003939AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J5P786SDN2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = UIFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tplioy.UIFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0AF9DC2B205D7EFA004D9E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J5P786SDN2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = UIFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tplioy.UIFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AF9DC2C205D7EFA004D9E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J5P786SDN2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = UIFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tplioy.UIFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -435,6 +881,24 @@
 			buildConfigurations = (
 				0A5B69A5205D5CBB0029AEE8 /* Debug */,
 				0A5B69A6205D5CBB0029AEE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AB7DF43205D5E38003939AC /* Build configuration list for PBXNativeTarget "UIFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB7DF41205D5E38003939AC /* Debug */,
+				0AB7DF42205D5E38003939AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AF9DC2A205D7EFA004D9E9F /* Build configuration list for PBXNativeTarget "UIFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF9DC2B205D7EFA004D9E9F /* Debug */,
+				0AF9DC2C205D7EFA004D9E9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
