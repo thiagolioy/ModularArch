@@ -13,18 +13,13 @@ import ModelsFramework
 final class BeerCatalogController: UIViewController {
     
     let screenView: BeerCatalogScreen
-    let service: BeerService
+    let presenter: BeerCatalogPresenter
     
-    fileprivate var items: [Beer] = [] {
-        didSet {
-            screenView.currentState = .ready(items)
-        }
-    }
-    
-    init(delegate: BeerCatalogScreenDelegate, service: BeerService = BeerAPIService()) {
-        screenView = BeerCatalogScreen(delegate: delegate)
-        self.service = service
+    init(delegate: BeerCatalogScreenDelegate, presenter: BeerCatalogPresenter) {
+        self.screenView = BeerCatalogScreen(delegate: delegate)
+        self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
+        presenter.screen = screenView
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,19 +35,6 @@ extension BeerCatalogController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchBeers()
-    }
-}
-
-extension BeerCatalogController {
-    func fetchBeers(at page: Int = 1, itemsPerPage number: Int = 10) {
-        service.fetchBeers(at: page, itemsPerPage: number) { result in
-            switch result {
-            case .success(let beers):
-                self.items = beers
-            case .failure(let error):
-                print(error)
-            }
-        }
+        presenter.fetchBeers()
     }
 }

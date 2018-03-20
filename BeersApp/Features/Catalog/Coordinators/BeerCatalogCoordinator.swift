@@ -20,7 +20,8 @@ final class BeerCatalogCoordinator: Coordinator {
     }
     
     func start() {
-        let controller = BeerCatalogController(delegate: self)
+        let controllerPresenter = BeerCatalogPresenter()
+        let controller = BeerCatalogController(delegate: self, presenter: controllerPresenter)
         presenter.pushViewController(controller, animated: true)
         catalogController = controller
     }
@@ -32,6 +33,10 @@ extension BeerCatalogCoordinator: BeerCatalogScreenDelegate {
     }
     
     func didSelectItem(at index: Int) {
-        print("select item at index: \(index)")
+        guard let controller = catalogController else {
+            return
+        }
+        let beer = controller.presenter.items[index]
+        print("select item at index: \(index) for beer: \(beer.name)")
     }
 }
