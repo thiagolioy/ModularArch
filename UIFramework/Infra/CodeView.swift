@@ -8,15 +8,15 @@
 
 import Foundation
 
-protocol CodeView {
+public protocol CodeView {
     func buildViewHierarchy()
     func buildConstraints()
     func setupCustomConfiguration()
     func setupCodeView()
 }
 
-extension CodeView {
-    func setupCodeView() {
+public extension CodeView {
+    public func setupCodeView() {
         buildViewHierarchy()
         buildConstraints()
         setupCustomConfiguration()

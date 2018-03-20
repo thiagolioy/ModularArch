@@ -26,7 +26,7 @@ final class BeerCatalogCoordinator: Coordinator {
     }
 }
 
-extension BeerCatalogCoordinator: CatalogScreenDelegate {
+extension BeerCatalogCoordinator: BeerCatalogScreenDelegate {
     func didClickMe() {
         print("didClickMe from the coordinator")
     }

@@ -20,10 +20,7 @@
 		0A9B05F8205F0A1D004B4288 /* BeerCatalogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B05F7205F0A1D004B4288 /* BeerCatalogCoordinator.swift */; };
 		0A9B05FA205F0A93004B4288 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B05F9205F0A93004B4288 /* ApplicationCoordinator.swift */; };
 		0A9B05FC205F0D4A004B4288 /* BeerCatalogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B05FB205F0D4A004B4288 /* BeerCatalogController.swift */; };
-		0A9B0600205F0F8A004B4288 /* CatalogScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B05FF205F0F8A004B4288 /* CatalogScreen.swift */; };
 		0A9B0604205F22EC004B4288 /* BeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0603205F22EC004B4288 /* BeerService.swift */; };
-		0A9B060A205F2E71004B4288 /* CatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0609205F2E71004B4288 /* CatalogTableViewCell.swift */; };
-		0A9B060C205F3113004B4288 /* CatalogTableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B060B205F3113004B4288 /* CatalogTableViewDatasource.swift */; };
 		0A9B060E205F3334004B4288 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B060D205F3334004B4288 /* Reusable.swift */; };
 		0A9B0610205F338E004B4288 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B060F205F338E004B4288 /* UITableView+Reusable.swift */; };
 		0AB66F9A205E95A4003B4EA6 /* NetworkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB66F91205E95A4003B4EA6 /* NetworkFramework.framework */; };
@@ -48,7 +45,6 @@
 		0AB7DF3C205D5E38003939AC /* UIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AB7DF3A205D5E38003939AC /* UIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AB7DF3F205D5E38003939AC /* UIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB7DF38205D5E38003939AC /* UIFramework.framework */; };
 		0AB7DF40205D5E38003939AC /* UIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB7DF38205D5E38003939AC /* UIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0AB7DF46205D5E9A003939AC /* RedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7DF45205D5E9A003939AC /* RedButton.swift */; };
 		0ADE6A34205D6B1200093FEA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADE6A2E205D665900093FEA /* SnapKit.framework */; };
 		0AF9DBFF205D6D8B004D9E9F /* SnapKit.framework.dSYM in Copy Carthage DSYMS */ = {isa = PBXBuildFile; fileRef = 0ADE6A31205D66E200093FEA /* SnapKit.framework.dSYM */; };
 		0AF9DC01205D6E26004D9E9F /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ADE6A2E205D665900093FEA /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -73,6 +69,11 @@
 		0AF9DC38205D7F9F004D9E9F /* Nimble_Snapshots.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC07205D7B74004D9E9F /* Nimble_Snapshots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AF9DC39205D7F9F004D9E9F /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC08205D7B74004D9E9F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AF9DC3A205D7F9F004D9E9F /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC09205D7B74004D9E9F /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		99B9E29D2061849F00E1517F /* BeerCatalogScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B9E2972061811C00E1517F /* BeerCatalogScreen.swift */; };
+		99B9E29E206184A300E1517F /* BeerTableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B9E295206180CC00E1517F /* BeerTableViewDatasource.swift */; };
+		99B9E29F206184A900E1517F /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B9E2932061807500E1517F /* BeerTableViewCell.swift */; };
+		99B9E2A02061850100E1517F /* ModelsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB66FB3205E95D5003B4EA6 /* ModelsFramework.framework */; };
+		99B9E2A12061851B00E1517F /* ModelsFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AB66FB3205E95D5003B4EA6 /* ModelsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +197,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				99B9E2A12061851B00E1517F /* ModelsFramework.framework in CopyFiles */,
 				0AF9DC01205D6E26004D9E9F /* SnapKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,10 +274,7 @@
 		0A9B05F7205F0A1D004B4288 /* BeerCatalogCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCatalogCoordinator.swift; sourceTree = "<group>"; };
 		0A9B05F9205F0A93004B4288 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		0A9B05FB205F0D4A004B4288 /* BeerCatalogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCatalogController.swift; sourceTree = "<group>"; };
-		0A9B05FF205F0F8A004B4288 /* CatalogScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogScreen.swift; sourceTree = "<group>"; };
 		0A9B0603205F22EC004B4288 /* BeerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerService.swift; sourceTree = "<group>"; };
-		0A9B0609205F2E71004B4288 /* CatalogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTableViewCell.swift; sourceTree = "<group>"; };
-		0A9B060B205F3113004B4288 /* CatalogTableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTableViewDatasource.swift; sourceTree = "<group>"; };
 		0A9B060D205F3334004B4288 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		0A9B060F205F338E004B4288 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		0AB66F91205E95A4003B4EA6 /* NetworkFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -298,8 +297,6 @@
 		0AB7DF38205D5E38003939AC /* UIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB7DF3A205D5E38003939AC /* UIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFramework.h; sourceTree = "<group>"; };
 		0AB7DF3B205D5E38003939AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AB7DF45205D5E9A003939AC /* RedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedButton.swift; sourceTree = "<group>"; };
-		0ADE6A2C205D601500093FEA /* UIFrameworkPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = UIFrameworkPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0ADE6A2E205D665900093FEA /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		0ADE6A31205D66E200093FEA /* SnapKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SnapKit.framework.dSYM; sourceTree = "<group>"; };
 		0AF9DC02205D7A9C004D9E9F /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
@@ -314,6 +311,10 @@
 		0AF9DC22205D7EFA004D9E9F /* UIFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF9DC24205D7EFA004D9E9F /* UIFrameworkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFrameworkSpec.swift; sourceTree = "<group>"; };
 		0AF9DC26205D7EFA004D9E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99371005206188E00068815C /* UIPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = UIPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		99B9E2932061807500E1517F /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		99B9E295206180CC00E1517F /* BeerTableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewDatasource.swift; sourceTree = "<group>"; };
+		99B9E2972061811C00E1517F /* BeerCatalogScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCatalogScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,6 +373,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B9E2A02061850100E1517F /* ModelsFramework.framework in Frameworks */,
 				0ADE6A34205D6B1200093FEA /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +429,7 @@
 		0A5B6986205D5CBB0029AEE8 /* BeersApp */ = {
 			isa = PBXGroup;
 			children = (
+				99B9E28D2061801E00E1517F /* Common */,
 				0A9B05F3205F098B004B4288 /* Features */,
 				0A5B6987205D5CBB0029AEE8 /* AppDelegate.swift */,
 				0A5B698E205D5CBB0029AEE8 /* Assets.xcassets */,
@@ -455,11 +458,9 @@
 		0A9B05F4205F0995004B4288 /* Catalog */ = {
 			isa = PBXGroup;
 			children = (
-				0A9B05F5205F09C1004B4288 /* Coordinator.swift */,
-				0A9B05F7205F0A1D004B4288 /* BeerCatalogCoordinator.swift */,
-				0A9B05F9205F0A93004B4288 /* ApplicationCoordinator.swift */,
-				0A9B05FB205F0D4A004B4288 /* BeerCatalogController.swift */,
-				0A9B0603205F22EC004B4288 /* BeerService.swift */,
+				99B9E28E2061803100E1517F /* Controller */,
+				99B9E28F2061803C00E1517F /* Service */,
+				99B9E28C2061800B00E1517F /* Coordinators */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -528,15 +529,10 @@
 		0AB7DF39205D5E38003939AC /* UIFramework */ = {
 			isa = PBXGroup;
 			children = (
+				99B9E29B2061846C00E1517F /* Features */,
+				99B9E29A2061846000E1517F /* Infra */,
 				0AB7DF3A205D5E38003939AC /* UIFramework.h */,
 				0AB7DF3B205D5E38003939AC /* Info.plist */,
-				0AB7DF45205D5E9A003939AC /* RedButton.swift */,
-				0AF9DC02205D7A9C004D9E9F /* CodeView.swift */,
-				0A9B05FF205F0F8A004B4288 /* CatalogScreen.swift */,
-				0A9B0609205F2E71004B4288 /* CatalogTableViewCell.swift */,
-				0A9B060B205F3113004B4288 /* CatalogTableViewDatasource.swift */,
-				0A9B060D205F3334004B4288 /* Reusable.swift */,
-				0A9B060F205F338E004B4288 /* UITableView+Reusable.swift */,
 			);
 			path = UIFramework;
 			sourceTree = "<group>";
@@ -577,11 +573,96 @@
 		0AF9DC3B205D814D004D9E9F /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				99371005206188E00068815C /* UIPlayground.playground */,
 				0AB66FE3205EAB7E003B4EA6 /* NetworkFramework.playground */,
 				0AB66FD8205E96D6003B4EA6 /* ModelsFrameworkPlayground.playground */,
-				0ADE6A2C205D601500093FEA /* UIFrameworkPlayground.playground */,
 			);
 			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		99B9E28C2061800B00E1517F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B05F7205F0A1D004B4288 /* BeerCatalogCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		99B9E28D2061801E00E1517F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B05F9205F0A93004B4288 /* ApplicationCoordinator.swift */,
+				0A9B05F5205F09C1004B4288 /* Coordinator.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		99B9E28E2061803100E1517F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B05FB205F0D4A004B4288 /* BeerCatalogController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		99B9E28F2061803C00E1517F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B0603205F22EC004B4288 /* BeerService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		99B9E2902061805900E1517F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				99B9E2932061807500E1517F /* BeerTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		99B9E2912061806000E1517F /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				99B9E295206180CC00E1517F /* BeerTableViewDatasource.swift */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		99B9E2922061806600E1517F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				99B9E2972061811C00E1517F /* BeerCatalogScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		99B9E29A2061846000E1517F /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9DC02205D7A9C004D9E9F /* CodeView.swift */,
+				0A9B060D205F3334004B4288 /* Reusable.swift */,
+				0A9B060F205F338E004B4288 /* UITableView+Reusable.swift */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		99B9E29B2061846C00E1517F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				99B9E29C2061847D00E1517F /* Catalog */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		99B9E29C2061847D00E1517F /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				99B9E2922061806600E1517F /* Views */,
+				99B9E2912061806000E1517F /* Datasources */,
+				99B9E2902061805900E1517F /* Cells */,
+			);
+			path = Catalog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -971,13 +1052,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B9E29E206184A300E1517F /* BeerTableViewDatasource.swift in Sources */,
+				99B9E29F206184A900E1517F /* BeerTableViewCell.swift in Sources */,
 				0A9B060E205F3334004B4288 /* Reusable.swift in Sources */,
-				0AB7DF46205D5E9A003939AC /* RedButton.swift in Sources */,
 				0AF9DC03205D7A9C004D9E9F /* CodeView.swift in Sources */,
-				0A9B0600205F0F8A004B4288 /* CatalogScreen.swift in Sources */,
-				0A9B060A205F2E71004B4288 /* CatalogTableViewCell.swift in Sources */,
-				0A9B060C205F3113004B4288 /* CatalogTableViewDatasource.swift in Sources */,
 				0A9B0610205F338E004B4288 /* UITableView+Reusable.swift in Sources */,
+				99B9E29D2061849F00E1517F /* BeerCatalogScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1165,6 +1245,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5P786SDN2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BeersApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tplioy.BeersApp;
@@ -1181,6 +1265,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5P786SDN2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BeersApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tplioy.BeersApp;

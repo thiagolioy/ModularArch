@@ -1,24 +1,16 @@
 //
-//  CatalogTableViewCell.swift
-//  UIFramework
+//  BeerTableViewCell.swift
+//  BeersApp
 //
-//  Created by Thiago Lioy on 18/03/18.
+//  Created by thiago.lioy on 3/20/18.
 //  Copyright © 2018 Thiago Lioy. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import ModelsFramework
+import SnapKit
 
-public struct CatalogTableViewCellModel {
-    let title: String
-    let description: String
-    
-    public init(title: String, description: String) {
-        self.title = title
-        self.description = description
-    }
-}
-
-public final class CatalogTableViewCell: UITableViewCell {
+public final class BeerTableViewCell: UITableViewCell {
     
     lazy var title: UILabel = {
         let view = UILabel(frame: .zero)
@@ -32,23 +24,23 @@ public final class CatalogTableViewCell: UITableViewCell {
         return view
     }()
     
-    func setup(with model: CatalogTableViewCellModel) {
-        title.text = model.title
+    func setup(with model: Beer) {
+        title.text = model.name
         descriptionLabel.text = model.description
         setupCodeView()
     }
     
 }
 
-extension CatalogTableViewCell: Reusable {}
+extension BeerTableViewCell: Reusable {}
 
-extension CatalogTableViewCell: CodeView {
-    func buildViewHierarchy() {
+extension BeerTableViewCell: CodeView {
+    public func buildViewHierarchy() {
         contentView.addSubview(title)
         contentView.addSubview(descriptionLabel)
     }
     
-    func buildConstraints() {
+    public func buildConstraints() {
         title.snp.makeConstraints { make in
             make.left.equalTo(self.contentView).offset(10)
             make.top.equalTo(self.contentView).offset(10)
@@ -64,7 +56,7 @@ extension CatalogTableViewCell: CodeView {
         }
     }
     
-    func setupCustomConfiguration() {
+    public func setupCustomConfiguration() {
         
     }
     

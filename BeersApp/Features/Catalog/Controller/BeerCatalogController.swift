@@ -12,20 +12,17 @@ import ModelsFramework
 
 final class BeerCatalogController: UIViewController {
     
-    let screenView: CatalogScreen
+    let screenView: BeerCatalogScreen
     let service: BeerService
     
     fileprivate var items: [Beer] = [] {
         didSet {
-            let viewModels = items.map {
-                CatalogTableViewCellModel(title: $0.name, description: $0.description)
-            }
-            screenView.currentState = .ready(viewModels)
+            screenView.currentState = .ready(items)
         }
     }
     
-    init(delegate: CatalogScreenDelegate, service: BeerService = BeerAPIService()) {
-        screenView = CatalogScreen(delegate: delegate)
+    init(delegate: BeerCatalogScreenDelegate, service: BeerService = BeerAPIService()) {
+        screenView = BeerCatalogScreen(delegate: delegate)
         self.service = service
         super.init(nibName: nil, bundle: nil)
     }

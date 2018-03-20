@@ -1,35 +1,36 @@
 //
-//  CatalogTableViewDatasource.swift
-//  UIFramework
+//  BeerTableViewDatasource.swift
+//  BeersApp
 //
-//  Created by Thiago Lioy on 18/03/18.
+//  Created by thiago.lioy on 3/20/18.
 //  Copyright © 2018 Thiago Lioy. All rights reserved.
 //
 
 import Foundation
+import ModelsFramework
 
-final class CatalogTableViewDatasource: NSObject {
+final class BeerTableViewDatasource: NSObject {
     
-    let items: [CatalogTableViewCellModel]
+    let items: [Beer]
     
-    init(items: [CatalogTableViewCellModel], tableView: UITableView) {
+    init(items: [Beer], tableView: UITableView) {
         self.items = items
         super.init()
         registerCells(in: tableView)
     }
     
     func registerCells(in tableView: UITableView) {
-        tableView.register(cellType: CatalogTableViewCell.self)
+        tableView.register(cellType: BeerTableViewCell.self)
     }
 }
 
-extension CatalogTableViewDatasource: UITableViewDataSource {
+extension BeerTableViewDatasource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: CatalogTableViewCell.self)
+        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: BeerTableViewCell.self)
         let model = items[indexPath.row]
         cell.setup(with: model)
         return cell

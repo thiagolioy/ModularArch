@@ -1,28 +1,28 @@
 //
 //  BeerCatalogScreen.swift
-//  UIFramework
+//  BeersApp
 //
-//  Created by Thiago Lioy on 18/03/18.
+//  Created by thiago.lioy on 3/20/18.
 //  Copyright © 2018 Thiago Lioy. All rights reserved.
 //
 
 import Foundation
-import SnapKit
+import ModelsFramework
 
-public protocol CatalogScreenDelegate: class {
+public protocol BeerCatalogScreenDelegate: class {
     func didClickMe()
     func didSelectItem(at index: Int)
 }
 
-public final class CatalogScreen: UIView {
+public final class BeerCatalogScreen: UIView {
     
-    weak var delegate: CatalogScreenDelegate?
-    private var datasource: CatalogTableViewDatasource?
+    weak var delegate: BeerCatalogScreenDelegate?
+    private var datasource: BeerTableViewDatasource?
     
     public enum UIState {
         case initial
         case loading
-        case ready([CatalogTableViewCellModel])
+        case ready([Beer])
         case emptySearch
         case error
     }
@@ -33,12 +33,12 @@ public final class CatalogScreen: UIView {
             case .initial:
                 print("initial state")
             case .ready(let list):
-                self.datasource = CatalogTableViewDatasource(items: list, tableView: tableView)
+                self.datasource = BeerTableViewDatasource(items: list, tableView: tableView)
                 tableView.dataSource = datasource
                 tableView.reloadData()
             default:
                 print("default state")
-            } 
+            }
         }
     }
     
@@ -64,7 +64,7 @@ public final class CatalogScreen: UIView {
         return view
     }()
     
-    public init(delegate: CatalogScreenDelegate) {
+    public init(delegate: BeerCatalogScreenDelegate) {
         self.delegate = delegate
         self.currentState = .initial
         super.init(frame: .zero)
@@ -75,26 +75,26 @@ public final class CatalogScreen: UIView {
     }
 }
 
-extension CatalogScreen {
+extension BeerCatalogScreen {
     @objc
     func didClickMe() {
         delegate?.didClickMe()
     }
 }
 
-extension CatalogScreen: UITableViewDelegate {
+extension BeerCatalogScreen: UITableViewDelegate {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.didSelectItem(at: indexPath.row)
     }
 }
 
-extension CatalogScreen: CodeView {
-    func buildViewHierarchy() {
+extension BeerCatalogScreen: CodeView {
+    public func buildViewHierarchy() {
         addSubview(tableView)
         addSubview(button)
     }
     
-    func buildConstraints() {
+    public func buildConstraints() {
         tableView.snp.makeConstraints { make in
             make.left.top.right.equalTo(self)
             make.bottom.equalTo(button.snp.top).inset(10)
@@ -107,7 +107,7 @@ extension CatalogScreen: CodeView {
         }
     }
     
-    func setupCustomConfiguration() {
+    public func setupCustomConfiguration() {
         backgroundColor = .white
     }
 }
