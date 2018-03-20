@@ -8,6 +8,7 @@
 
 import UIKit
 import UIFramework
+import ModelsFramework
 
 final class BeerCatalogCoordinator: Coordinator {
     
@@ -20,23 +21,19 @@ final class BeerCatalogCoordinator: Coordinator {
     }
     
     func start() {
-        let controllerPresenter = BeerCatalogPresenter()
-        let controller = BeerCatalogController(delegate: self, presenter: controllerPresenter)
+        let controllerPresenter = BeerCatalogPresenter(delegate: self)
+        let controller = BeerCatalogController(presenter: controllerPresenter)
         presenter.pushViewController(controller, animated: true)
         catalogController = controller
     }
 }
 
-extension BeerCatalogCoordinator: BeerCatalogScreenDelegate {
+extension BeerCatalogCoordinator: BeerCatalogPresenterDelegate {
     func didClickMe() {
         print("didClickMe from the coordinator")
     }
-    
-    func didSelectItem(at index: Int) {
-        guard let controller = catalogController else {
-            return
-        }
-        let beer = controller.presenter.items[index]
-        print("select item at index: \(index) for beer: \(beer.name)")
+
+    func didSelect(beer: Beer) {
+        print("didSelect beer \(beer.name) from the coordinator")
     }
 }

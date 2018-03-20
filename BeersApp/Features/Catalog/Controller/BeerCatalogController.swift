@@ -12,11 +12,10 @@ import ModelsFramework
 
 final class BeerCatalogController: UIViewController {
     
-    let screenView: BeerCatalogScreen
+    let screenView = BeerCatalogScreen()
     let presenter: BeerCatalogPresenter
     
-    init(delegate: BeerCatalogScreenDelegate, presenter: BeerCatalogPresenter) {
-        self.screenView = BeerCatalogScreen(delegate: delegate)
+    init(presenter: BeerCatalogPresenter) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
         presenter.screen = screenView

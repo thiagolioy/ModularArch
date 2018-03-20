@@ -16,7 +16,7 @@ public protocol BeerCatalogScreenDelegate: class {
 
 public final class BeerCatalogScreen: UIView {
     
-    weak var delegate: BeerCatalogScreenDelegate?
+    public weak var delegate: BeerCatalogScreenDelegate?
     private var datasource: BeerTableViewDatasource?
     
     public enum UIState {
@@ -64,8 +64,7 @@ public final class BeerCatalogScreen: UIView {
         return view
     }()
     
-    public init(delegate: BeerCatalogScreenDelegate) {
-        self.delegate = delegate
+    public init() {
         self.currentState = .initial
         super.init(frame: .zero)
     }

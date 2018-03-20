@@ -10,10 +10,21 @@ import Foundation
 import ModelsFramework
 import UIFramework
 
+protocol BeerCatalogPresenterDelegate: class {
+    func didClickMe()
+    func didSelect(beer: Beer)
+}
+
 final class BeerCatalogPresenter {
     
+    weak var delegate: BeerCatalogPresenterDelegate?
     let service: BeerService
-    weak var screen: BeerCatalogScreen?
+    
+    weak var screen: BeerCatalogScreen? {
+        didSet {
+            screen?.delegate = self
+        }
+    }
     
     private(set) var items: [Beer] = [] {
         didSet {
@@ -21,7 +32,8 @@ final class BeerCatalogPresenter {
         }
     }
     
-    init(service: BeerService = BeerAPIService()) {
+    init(delegate: BeerCatalogPresenterDelegate, service: BeerService = BeerAPIService()) {
+        self.delegate = delegate
         self.service = service
     }
     
@@ -36,4 +48,15 @@ final class BeerCatalogPresenter {
         }
     }
     
+}
+
+extension BeerCatalogPresenter: BeerCatalogScreenDelegate {
+    func didClickMe() {
+        delegate?.didClickMe()
+    }
+    
+    func didSelectItem(at index: Int) {
+        let beer = items[index]
+        delegate?.didSelect(beer: beer)
+    }
 }
