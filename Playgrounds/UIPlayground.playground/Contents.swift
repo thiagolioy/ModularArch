@@ -6,15 +6,12 @@ import UIFramework
 
 class MyViewController : UIViewController {
     override func loadView() {
-        let screen = BeerCatalogScreen(delegate: self)
+        let screen = BeerCatalogScreen()
         self.view = screen.view
     }
 }
 
-extension MyViewController: BeerCatalogScreenDelegate {
-    func didClickMe() {}
-    func didSelectItem(at index: Int) {}
-}
+
 
 // Present the view controller in the Live View window
 PlaygroundPage.current.liveView = MyViewController()
