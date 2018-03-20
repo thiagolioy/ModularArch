@@ -8,16 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0A5B6988205D5CBB0029AEE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B6987205D5CBB0029AEE8 /* AppDelegate.swift */; };
-		0A5B698D205D5CBB0029AEE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B698B205D5CBB0029AEE8 /* Main.storyboard */; };
 		0A5B698F205D5CBB0029AEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B698E205D5CBB0029AEE8 /* Assets.xcassets */; };
 		0A5B6992205D5CBB0029AEE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B6990205D5CBB0029AEE8 /* LaunchScreen.storyboard */; };
-		0A5B699D205D5CBB0029AEE8 /* MoneySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B699C205D5CBB0029AEE8 /* MoneySpec.swift */; };
 		0A7144E8205EE82E00641372 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7144E7205EE82E00641372 /* NetworkClient.swift */; };
 		0A7144EA205EE84500641372 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7144E9205EE84500641372 /* Result.swift */; };
 		0A7144EC205EE87500641372 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7144EB205EE87500641372 /* NetworkErrors.swift */; };
 		0A7144EE205EE8A500641372 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7144ED205EE8A500641372 /* Endpoint.swift */; };
 		0A7144F2205EF45700641372 /* TaskHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7144F1205EF45700641372 /* TaskHandler.swift */; };
 		0A9B05F2205EF660004B4288 /* JsonDecoder+FatalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B05F1205EF660004B4288 /* JsonDecoder+FatalError.swift */; };
+		0A9B05F6205F09C1004B4288 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B05F5205F09C1004B4288 /* Coordinator.swift */; };
+		0A9B05F8205F0A1D004B4288 /* BeerCatalogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B05F7205F0A1D004B4288 /* BeerCatalogCoordinator.swift */; };
+		0A9B05FA205F0A93004B4288 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B05F9205F0A93004B4288 /* ApplicationCoordinator.swift */; };
+		0A9B05FC205F0D4A004B4288 /* BeerCatalogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B05FB205F0D4A004B4288 /* BeerCatalogController.swift */; };
+		0A9B0600205F0F8A004B4288 /* CatalogScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B05FF205F0F8A004B4288 /* CatalogScreen.swift */; };
+		0A9B0604205F22EC004B4288 /* BeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0603205F22EC004B4288 /* BeerService.swift */; };
+		0A9B060A205F2E71004B4288 /* CatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B0609205F2E71004B4288 /* CatalogTableViewCell.swift */; };
+		0A9B060C205F3113004B4288 /* CatalogTableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B060B205F3113004B4288 /* CatalogTableViewDatasource.swift */; };
+		0A9B060E205F3334004B4288 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B060D205F3334004B4288 /* Reusable.swift */; };
+		0A9B0610205F338E004B4288 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B060F205F338E004B4288 /* UITableView+Reusable.swift */; };
 		0AB66F9A205E95A4003B4EA6 /* NetworkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB66F91205E95A4003B4EA6 /* NetworkFramework.framework */; };
 		0AB66FA1205E95A4003B4EA6 /* NetworkFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB66FA0205E95A4003B4EA6 /* NetworkFrameworkTests.swift */; };
 		0AB66FA3205E95A4003B4EA6 /* NetworkFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AB66F93205E95A4003B4EA6 /* NetworkFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,7 +53,6 @@
 		0AF9DBFF205D6D8B004D9E9F /* SnapKit.framework.dSYM in Copy Carthage DSYMS */ = {isa = PBXBuildFile; fileRef = 0ADE6A31205D66E200093FEA /* SnapKit.framework.dSYM */; };
 		0AF9DC01205D6E26004D9E9F /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ADE6A2E205D665900093FEA /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AF9DC03205D7A9C004D9E9F /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9DC02205D7A9C004D9E9F /* CodeView.swift */; };
-		0AF9DC05205D7B0E004D9E9F /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9DC04205D7B0E004D9E9F /* Money.swift */; };
 		0AF9DC0C205D7B74004D9E9F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC08205D7B74004D9E9F /* Nimble.framework */; };
 		0AF9DC0D205D7B74004D9E9F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC09205D7B74004D9E9F /* Quick.framework */; };
 		0AF9DC13205D7B9F004D9E9F /* Quick.framework.dSYM in Copy Frameworks dSYMS */ = {isa = PBXBuildFile; fileRef = 0AF9DC0F205D7B9F004D9E9F /* Quick.framework.dSYM */; };
@@ -250,12 +257,10 @@
 /* Begin PBXFileReference section */
 		0A5B6984205D5CBB0029AEE8 /* BeersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5B6987205D5CBB0029AEE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A5B698C205D5CBB0029AEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A5B698E205D5CBB0029AEE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A5B6991205D5CBB0029AEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A5B6993205D5CBB0029AEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A5B6998205D5CBB0029AEE8 /* BeersAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeersAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A5B699C205D5CBB0029AEE8 /* MoneySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneySpec.swift; sourceTree = "<group>"; };
 		0A5B699E205D5CBB0029AEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A7144E7205EE82E00641372 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		0A7144E9205EE84500641372 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -263,6 +268,16 @@
 		0A7144ED205EE8A500641372 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		0A7144F1205EF45700641372 /* TaskHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskHandler.swift; sourceTree = "<group>"; };
 		0A9B05F1205EF660004B4288 /* JsonDecoder+FatalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JsonDecoder+FatalError.swift"; sourceTree = "<group>"; };
+		0A9B05F5205F09C1004B4288 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		0A9B05F7205F0A1D004B4288 /* BeerCatalogCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCatalogCoordinator.swift; sourceTree = "<group>"; };
+		0A9B05F9205F0A93004B4288 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		0A9B05FB205F0D4A004B4288 /* BeerCatalogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCatalogController.swift; sourceTree = "<group>"; };
+		0A9B05FF205F0F8A004B4288 /* CatalogScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogScreen.swift; sourceTree = "<group>"; };
+		0A9B0603205F22EC004B4288 /* BeerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerService.swift; sourceTree = "<group>"; };
+		0A9B0609205F2E71004B4288 /* CatalogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTableViewCell.swift; sourceTree = "<group>"; };
+		0A9B060B205F3113004B4288 /* CatalogTableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTableViewDatasource.swift; sourceTree = "<group>"; };
+		0A9B060D205F3334004B4288 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		0A9B060F205F338E004B4288 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		0AB66F91205E95A4003B4EA6 /* NetworkFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB66F93205E95A4003B4EA6 /* NetworkFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkFramework.h; sourceTree = "<group>"; };
 		0AB66F94205E95A4003B4EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -288,7 +303,6 @@
 		0ADE6A2E205D665900093FEA /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		0ADE6A31205D66E200093FEA /* SnapKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SnapKit.framework.dSYM; sourceTree = "<group>"; };
 		0AF9DC02205D7A9C004D9E9F /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
-		0AF9DC04205D7B0E004D9E9F /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		0AF9DC06205D7B74004D9E9F /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
 		0AF9DC07205D7B74004D9E9F /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble_Snapshots.framework; path = Carthage/Build/iOS/Nimble_Snapshots.framework; sourceTree = "<group>"; };
 		0AF9DC08205D7B74004D9E9F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
@@ -413,12 +427,11 @@
 		0A5B6986205D5CBB0029AEE8 /* BeersApp */ = {
 			isa = PBXGroup;
 			children = (
+				0A9B05F3205F098B004B4288 /* Features */,
 				0A5B6987205D5CBB0029AEE8 /* AppDelegate.swift */,
-				0A5B698B205D5CBB0029AEE8 /* Main.storyboard */,
 				0A5B698E205D5CBB0029AEE8 /* Assets.xcassets */,
 				0A5B6990205D5CBB0029AEE8 /* LaunchScreen.storyboard */,
 				0A5B6993205D5CBB0029AEE8 /* Info.plist */,
-				0AF9DC04205D7B0E004D9E9F /* Money.swift */,
 			);
 			path = BeersApp;
 			sourceTree = "<group>";
@@ -426,10 +439,29 @@
 		0A5B699B205D5CBB0029AEE8 /* BeersAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				0A5B699C205D5CBB0029AEE8 /* MoneySpec.swift */,
 				0A5B699E205D5CBB0029AEE8 /* Info.plist */,
 			);
 			path = BeersAppTests;
+			sourceTree = "<group>";
+		};
+		0A9B05F3205F098B004B4288 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B05F4205F0995004B4288 /* Catalog */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		0A9B05F4205F0995004B4288 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B05F5205F09C1004B4288 /* Coordinator.swift */,
+				0A9B05F7205F0A1D004B4288 /* BeerCatalogCoordinator.swift */,
+				0A9B05F9205F0A93004B4288 /* ApplicationCoordinator.swift */,
+				0A9B05FB205F0D4A004B4288 /* BeerCatalogController.swift */,
+				0A9B0603205F22EC004B4288 /* BeerService.swift */,
+			);
+			path = Catalog;
 			sourceTree = "<group>";
 		};
 		0AB66F92205E95A4003B4EA6 /* NetworkFramework */ = {
@@ -500,6 +532,11 @@
 				0AB7DF3B205D5E38003939AC /* Info.plist */,
 				0AB7DF45205D5E9A003939AC /* RedButton.swift */,
 				0AF9DC02205D7A9C004D9E9F /* CodeView.swift */,
+				0A9B05FF205F0F8A004B4288 /* CatalogScreen.swift */,
+				0A9B0609205F2E71004B4288 /* CatalogTableViewCell.swift */,
+				0A9B060B205F3113004B4288 /* CatalogTableViewDatasource.swift */,
+				0A9B060D205F3334004B4288 /* Reusable.swift */,
+				0A9B060F205F338E004B4288 /* UITableView+Reusable.swift */,
 			);
 			path = UIFramework;
 			sourceTree = "<group>";
@@ -816,7 +853,6 @@
 			files = (
 				0A5B6992205D5CBB0029AEE8 /* LaunchScreen.storyboard in Resources */,
 				0A5B698F205D5CBB0029AEE8 /* Assets.xcassets in Resources */,
-				0A5B698D205D5CBB0029AEE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -877,8 +913,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF9DC05205D7B0E004D9E9F /* Money.swift in Sources */,
+				0A9B05F8205F0A1D004B4288 /* BeerCatalogCoordinator.swift in Sources */,
+				0A9B05F6205F09C1004B4288 /* Coordinator.swift in Sources */,
 				0A5B6988205D5CBB0029AEE8 /* AppDelegate.swift in Sources */,
+				0A9B05FC205F0D4A004B4288 /* BeerCatalogController.swift in Sources */,
+				0A9B0604205F22EC004B4288 /* BeerService.swift in Sources */,
+				0A9B05FA205F0A93004B4288 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -886,7 +926,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A5B699D205D5CBB0029AEE8 /* MoneySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -932,8 +971,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9B060E205F3334004B4288 /* Reusable.swift in Sources */,
 				0AB7DF46205D5E9A003939AC /* RedButton.swift in Sources */,
 				0AF9DC03205D7A9C004D9E9F /* CodeView.swift in Sources */,
+				0A9B0600205F0F8A004B4288 /* CatalogScreen.swift in Sources */,
+				0A9B060A205F2E71004B4288 /* CatalogTableViewCell.swift in Sources */,
+				0A9B060C205F3113004B4288 /* CatalogTableViewDatasource.swift in Sources */,
+				0A9B0610205F338E004B4288 /* UITableView+Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -996,14 +1040,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0A5B698B205D5CBB0029AEE8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A5B698C205D5CBB0029AEE8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0A5B6990205D5CBB0029AEE8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

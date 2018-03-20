@@ -9,8 +9,8 @@
 import Foundation
 
 protocol CodeView {
-    func buildConstraints()
     func buildViewHierarchy()
+    func buildConstraints()
     func setupCustomConfiguration()
     func setupCodeView()
 }
