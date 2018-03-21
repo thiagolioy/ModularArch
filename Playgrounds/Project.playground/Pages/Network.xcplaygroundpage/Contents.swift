@@ -1,6 +1,6 @@
-//: Playground - noun: a place where people can play
+//: [Previous](@previous)
 
-import UIKit
+import Foundation
 import PlaygroundSupport
 import NetworkFramework
 import ModelsFramework
@@ -32,3 +32,6 @@ client.process(endpoint: endpoint, with: [Beer].self) { result in
     }
     PlaygroundPage.current.finishExecution()
 }
+
+
+//: [Next](@next)

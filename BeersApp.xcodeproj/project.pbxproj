@@ -395,11 +395,9 @@
 		0AB66FBB205E95D6003B4EA6 /* ModelsFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelsFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB66FC2205E95D6003B4EA6 /* BeerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerSpec.swift; sourceTree = "<group>"; };
 		0AB66FC4205E95D6003B4EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AB66FD8205E96D6003B4EA6 /* ModelsFrameworkPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ModelsFrameworkPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0AB66FDA205E976C003B4EA6 /* beers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = beers.json; sourceTree = "<group>"; };
 		0AB66FDD205E97FE003B4EA6 /* JsonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoader.swift; sourceTree = "<group>"; };
 		0AB66FDF205E9A10003B4EA6 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
-		0AB66FE3205EAB7E003B4EA6 /* NetworkFramework.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NetworkFramework.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0AB7DF38205D5E38003939AC /* UIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB7DF3A205D5E38003939AC /* UIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFramework.h; sourceTree = "<group>"; };
 		0AB7DF3B205D5E38003939AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -417,7 +415,7 @@
 		0AF9DC22205D7EFA004D9E9F /* UIFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF9DC24205D7EFA004D9E9F /* UIFrameworkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFrameworkSpec.swift; sourceTree = "<group>"; };
 		0AF9DC26205D7EFA004D9E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99371005206188E00068815C /* UIPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = UIPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		99371005206188E00068815C /* Project.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Project.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9937100720618C3A0068815C /* BeerCatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCatalogPresenter.swift; sourceTree = "<group>"; };
 		99B9E2932061807500E1517F /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 		99B9E295206180CC00E1517F /* BeerTableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewDatasource.swift; sourceTree = "<group>"; };
@@ -757,9 +755,7 @@
 		0AF9DC3B205D814D004D9E9F /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				99371005206188E00068815C /* UIPlayground.playground */,
-				0AB66FE3205EAB7E003B4EA6 /* NetworkFramework.playground */,
-				0AB66FD8205E96D6003B4EA6 /* ModelsFrameworkPlayground.playground */,
+				99371005206188E00068815C /* Project.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";

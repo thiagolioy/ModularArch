@@ -17,7 +17,7 @@ protocol BeerCatalogScreenDelegate: class {
 
 final class BeerCatalogScreen: UIView {
     
-    public weak var delegate: BeerCatalogScreenDelegate?
+    weak var delegate: BeerCatalogScreenDelegate?
     private var datasource: BeerTableViewDatasource?
     
     public enum UIState {
