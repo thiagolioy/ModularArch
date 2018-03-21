@@ -24,18 +24,33 @@ final class ApplicationCoordinator: Coordinator {
     }
     
     func start() {
-        let coordinator = BeerCatalogCoordinator(presenter: rootViewController, delegate: self)
+        let coordinator = reuse(coordinator: BeerCatalogCoordinator.self, orInit: {
+            return BeerCatalogCoordinator(presenter: rootViewController, delegate: self)
+        })
         window.rootViewController = rootViewController
         coordinator.start()
         window.makeKeyAndVisible()
-        coordinators.append(coordinator)
+    }
+}
+
+extension ApplicationCoordinator {
+    fileprivate func reuse<T: Coordinator>(coordinator: T.Type,
+                                           orInit initCall: () -> Coordinator ) -> Coordinator {
+        if let coordinator = coordinators.filter({ $0 is T }).first {
+            return coordinator
+        }
+        
+        let newCoordinator = initCall()
+        coordinators.append(newCoordinator)
+        return newCoordinator
     }
 }
 
 extension ApplicationCoordinator: BeerCatalogCoordinatorDelegate {
     func proceedToNext() {
-        let coordinator = AnotherCoordinator(presenter: rootViewController)
-        coordinators.append(coordinator)
+        let coordinator = reuse(coordinator: AnotherCoordinator.self, orInit: {
+            return AnotherCoordinator(presenter: rootViewController)
+        })
         coordinator.start()
     }
 }
