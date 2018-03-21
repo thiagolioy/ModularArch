@@ -19,22 +19,21 @@ final class BeerCatalogPresenter {
     
     weak var delegate: BeerCatalogPresenterDelegate?
     let service: BeerService
-    
-    weak var screen: BeerCatalogScreen? {
-        didSet {
-            screen?.delegate = self
-        }
-    }
+    let screen: BeerCatalogScreen
     
     private(set) var items: [Beer] = [] {
         didSet {
-            screen?.currentState = .ready(items)
+            screen.currentState = .ready(items)
         }
     }
     
-    init(delegate: BeerCatalogPresenterDelegate, service: BeerService = BeerAPIService()) {
+    init(screen: BeerCatalogScreen, delegate: BeerCatalogPresenterDelegate,
+         service: BeerService = BeerAPIService()) {
+        self.screen = screen
         self.delegate = delegate
         self.service = service
+        
+        self.screen.delegate = self
     }
     
     func fetchBeers(at page: Int = 1, itemsPerPage number: Int = 10) {

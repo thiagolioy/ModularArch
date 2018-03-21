@@ -21,8 +21,8 @@ final class BeerCatalogCoordinator: Coordinator {
     }
     
     func start() {
-        let controllerPresenter = BeerCatalogPresenter(delegate: self)
-        let controller = BeerCatalogController(presenter: controllerPresenter)
+        let builder = BeerCatalogPresenterBuilder(delegate: self)
+        let controller = BeerCatalogController(builder: builder)
         presenter.pushViewController(controller, animated: true)
         catalogController = controller
     }

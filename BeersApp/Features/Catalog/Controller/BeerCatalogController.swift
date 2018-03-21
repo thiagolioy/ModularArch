@@ -15,10 +15,9 @@ final class BeerCatalogController: UIViewController {
     let screenView = BeerCatalogScreen()
     let presenter: BeerCatalogPresenter
     
-    init(presenter: BeerCatalogPresenter) {
-        self.presenter = presenter
+    init(builder: BeerCatalogPresenterBuilder) {
+        self.presenter = builder.build(with: screenView)
         super.init(nibName: nil, bundle: nil)
-        presenter.screen = screenView
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -29,7 +28,7 @@ final class BeerCatalogController: UIViewController {
 extension BeerCatalogController {
     override func loadView() {
         super.loadView()
-        self.view = screenView.view
+        self.view = screenView
     }
     
     override func viewDidLoad() {

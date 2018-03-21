@@ -40,13 +40,7 @@ public final class BeerCatalogScreen: UIView {
                 print("default state")
             }
         }
-    }
-    
-    public var view: UIView {
-        setupCodeView()
-        return self
-    }
-    
+    }    
     
     fileprivate lazy var button: UIButton = {
         let view = UIButton(frame: .zero)
@@ -67,6 +61,7 @@ public final class BeerCatalogScreen: UIView {
     public init() {
         self.currentState = .initial
         super.init(frame: .zero)
+        setupCodeView()
     }
     
     required public init?(coder aDecoder: NSCoder) {

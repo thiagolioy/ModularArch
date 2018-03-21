@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A15A9422061E62A0055A5DD /* BeerCatalogPresenterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A15A9412061E62A0055A5DD /* BeerCatalogPresenterBuilder.swift */; };
 		0A5B6988205D5CBB0029AEE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B6987205D5CBB0029AEE8 /* AppDelegate.swift */; };
 		0A5B698F205D5CBB0029AEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B698E205D5CBB0029AEE8 /* Assets.xcassets */; };
 		0A5B6992205D5CBB0029AEE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B6990205D5CBB0029AEE8 /* LaunchScreen.storyboard */; };
@@ -258,6 +259,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A15A9412061E62A0055A5DD /* BeerCatalogPresenterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCatalogPresenterBuilder.swift; sourceTree = "<group>"; };
 		0A5B6984205D5CBB0029AEE8 /* BeersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5B6987205D5CBB0029AEE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A5B698E205D5CBB0029AEE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -395,6 +397,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A15A9402061E6030055A5DD /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0A15A9412061E62A0055A5DD /* BeerCatalogPresenterBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		0A5B697B205D5CBB0029AEE8 = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +470,7 @@
 		0A9B05F4205F0995004B4288 /* Catalog */ = {
 			isa = PBXGroup;
 			children = (
+				0A15A9402061E6030055A5DD /* Builder */,
 				9937100620618C2B0068815C /* Presenter */,
 				99B9E28E2061803100E1517F /* Controller */,
 				99B9E28F2061803C00E1517F /* Service */,
@@ -1009,6 +1020,7 @@
 				0A9B05F6205F09C1004B4288 /* Coordinator.swift in Sources */,
 				9937100820618C3A0068815C /* BeerCatalogPresenter.swift in Sources */,
 				0A5B6988205D5CBB0029AEE8 /* AppDelegate.swift in Sources */,
+				0A15A9422061E62A0055A5DD /* BeerCatalogPresenterBuilder.swift in Sources */,
 				0A9B05FC205F0D4A004B4288 /* BeerCatalogController.swift in Sources */,
 				0A9B0604205F22EC004B4288 /* BeerService.swift in Sources */,
 				0A9B05FA205F0A93004B4288 /* ApplicationCoordinator.swift in Sources */,
