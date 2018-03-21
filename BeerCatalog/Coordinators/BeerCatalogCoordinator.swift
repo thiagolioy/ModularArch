@@ -10,14 +10,19 @@ import UIKit
 import UIFramework
 import ModelsFramework
 
+public protocol BeerCatalogCoordinatorDelegate: class {
+    func proceedToNext()
+}
+
 public final class BeerCatalogCoordinator: Coordinator {
     
     private let presenter: UINavigationController
     private var catalogController: BeerCatalogController?
+    private weak var delegate: BeerCatalogCoordinatorDelegate?
     
-    
-    public init(presenter: UINavigationController) {
+    public init(presenter: UINavigationController, delegate: BeerCatalogCoordinatorDelegate) {
         self.presenter = presenter
+        self.delegate = delegate
     }
     
     public func start() {
@@ -30,7 +35,7 @@ public final class BeerCatalogCoordinator: Coordinator {
 
 extension BeerCatalogCoordinator: BeerCatalogPresenterDelegate {
     func didClickMe() {
-        print("didClickMe from the coordinator")
+        delegate?.proceedToNext()
     }
 
     func didSelect(beer: Beer) {

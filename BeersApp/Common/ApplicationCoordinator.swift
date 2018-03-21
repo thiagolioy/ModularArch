@@ -9,24 +9,33 @@
 import UIKit
 import UIFramework
 import BeerCatalog
+import AnotherFeature
 
 final class ApplicationCoordinator: Coordinator {
     
     let window: UIWindow
     let rootViewController: UINavigationController
-    
-    let coordinator: Coordinator
+    private var coordinators: [Coordinator] = []
     
     init(window: UIWindow) {
         self.window = window
         rootViewController = UINavigationController()
         rootViewController.navigationBar.prefersLargeTitles = true
-        coordinator = BeerCatalogCoordinator(presenter: rootViewController)
     }
     
     func start() {
+        let coordinator = BeerCatalogCoordinator(presenter: rootViewController, delegate: self)
         window.rootViewController = rootViewController
         coordinator.start()
         window.makeKeyAndVisible()
+        coordinators.append(coordinator)
+    }
+}
+
+extension ApplicationCoordinator: BeerCatalogCoordinatorDelegate {
+    func proceedToNext() {
+        let coordinator = AnotherCoordinator(presenter: rootViewController)
+        coordinators.append(coordinator)
+        coordinator.start()
     }
 }
