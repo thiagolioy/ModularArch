@@ -8,7 +8,6 @@
 
 import Foundation
 import ModelsFramework
-import UIFramework
 
 protocol BeerCatalogPresenterDelegate: class {
     func didClickMe()

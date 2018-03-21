@@ -10,17 +10,17 @@ import UIKit
 import UIFramework
 import ModelsFramework
 
-final class BeerCatalogCoordinator: Coordinator {
+public final class BeerCatalogCoordinator: Coordinator {
     
     private let presenter: UINavigationController
     private var catalogController: BeerCatalogController?
     
     
-    init(presenter: UINavigationController) {
+    public init(presenter: UINavigationController) {
         self.presenter = presenter
     }
     
-    func start() {
+    public func start() {
         let builder = BeerCatalogPresenterBuilder(delegate: self)
         let controller = BeerCatalogController(builder: builder)
         presenter.pushViewController(controller, animated: true)

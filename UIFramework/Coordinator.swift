@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol Coordinator {
+public protocol Coordinator {
     func start()
 }

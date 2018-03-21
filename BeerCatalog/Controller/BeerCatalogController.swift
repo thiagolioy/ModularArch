@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import UIFramework
 import ModelsFramework
 
 final class BeerCatalogController: UIViewController {

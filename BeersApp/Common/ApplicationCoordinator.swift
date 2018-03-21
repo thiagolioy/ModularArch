@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import UIFramework
+import BeerCatalog
 
 final class ApplicationCoordinator: Coordinator {
     

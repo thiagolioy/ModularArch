@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import UIKit
-import UIFramework
 
 final class BeerCatalogPresenterBuilder {
     

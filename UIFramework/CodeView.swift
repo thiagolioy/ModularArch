@@ -21,4 +21,6 @@ public extension CodeView {
         buildConstraints()
         setupCustomConfiguration()
     }
+    
+    public func setupCustomConfiguration() {}
 }

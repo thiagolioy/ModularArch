@@ -8,6 +8,7 @@
 
 import Foundation
 import ModelsFramework
+import UIFramework
 
 final class BeerTableViewDatasource: NSObject {
     

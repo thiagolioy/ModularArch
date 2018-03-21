@@ -8,13 +8,14 @@
 
 import Foundation
 import ModelsFramework
+import UIFramework
 
-public protocol BeerCatalogScreenDelegate: class {
+protocol BeerCatalogScreenDelegate: class {
     func didClickMe()
     func didSelectItem(at index: Int)
 }
 
-public final class BeerCatalogScreen: UIView {
+final class BeerCatalogScreen: UIView {
     
     public weak var delegate: BeerCatalogScreenDelegate?
     private var datasource: BeerTableViewDatasource?

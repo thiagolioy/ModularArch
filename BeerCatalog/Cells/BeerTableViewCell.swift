@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import UIFramework
 import ModelsFramework
 import SnapKit
 
-public final class BeerTableViewCell: UITableViewCell {
+final class BeerTableViewCell: UITableViewCell {
     
     lazy var title: UILabel = {
         let view = UILabel(frame: .zero)
