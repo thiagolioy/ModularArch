@@ -613,7 +613,6 @@
 			isa = PBXGroup;
 			children = (
 				99B9E28D2061801E00E1517F /* Common */,
-				0A9B05F3205F098B004B4288 /* Features */,
 				0A5B6987205D5CBB0029AEE8 /* AppDelegate.swift */,
 				0A5B698E205D5CBB0029AEE8 /* Assets.xcassets */,
 				0A5B6990205D5CBB0029AEE8 /* LaunchScreen.storyboard */,
@@ -628,21 +627,6 @@
 				0A5B699E205D5CBB0029AEE8 /* Info.plist */,
 			);
 			path = BeersAppTests;
-			sourceTree = "<group>";
-		};
-		0A9B05F3205F098B004B4288 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				0A9B05F4205F0995004B4288 /* Catalog */,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		0A9B05F4205F0995004B4288 /* Catalog */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Catalog;
 			sourceTree = "<group>";
 		};
 		0AB66F92205E95A4003B4EA6 /* NetworkFramework */ = {
