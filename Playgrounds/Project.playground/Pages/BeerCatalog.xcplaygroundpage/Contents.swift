@@ -4,9 +4,14 @@ import UIKit
 import PlaygroundSupport
 import BeerCatalog
 
+
+class Mock: BeerCatalogCoordinatorDelegate {
+    func proceedToNext() {}
+}
+
 let navigation = UINavigationController()
 navigation.navigationBar.prefersLargeTitles = true
-let coordinator = BeerCatalogCoordinator(presenter: navigation)
+let coordinator = BeerCatalogCoordinator(presenter: navigation, delegate:Mock())
 
 coordinator.start()
 

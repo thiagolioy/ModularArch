@@ -1,19 +1,18 @@
 //
-//  UIFrameworkTests.swift
-//  UIFrameworkTests
+//  BeerAppSpec.swift
+//  BeersAppTests
 //
-//  Created by Thiago Lioy on 17/03/18.
+//  Created by thiago.lioy on 3/23/18.
 //  Copyright © 2018 Thiago Lioy. All rights reserved.
 //
 
 import Quick
 import Nimble
-import Nimble_Snapshots
-@testable import UIFramework
+@testable import BeersApp
 
-class UIFrameworkSpec: QuickSpec {
+class BeerAppSpec: QuickSpec {
     override func spec() {
-        describe("the 'UI'") {
+        describe("the 'BeerApp'") {
             
             it("has everything you need to get started") {
                 expect(true).to(beTrue())
@@ -21,5 +20,6 @@ class UIFrameworkSpec: QuickSpec {
         }
     }
 }
+
 
 

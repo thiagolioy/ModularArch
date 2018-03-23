@@ -100,6 +100,7 @@
 		0AF9DC38205D7F9F004D9E9F /* Nimble_Snapshots.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC07205D7B74004D9E9F /* Nimble_Snapshots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AF9DC39205D7F9F004D9E9F /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC08205D7B74004D9E9F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AF9DC3A205D7F9F004D9E9F /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9DC09205D7B74004D9E9F /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9929482A20654A7600E628A6 /* BeerAppSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9929482920654A7600E628A6 /* BeerAppSpec.swift */; };
 		99B9E2A02061850100E1517F /* ModelsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB66FB3205E95D5003B4EA6 /* ModelsFramework.framework */; };
 		99B9E2A12061851B00E1517F /* ModelsFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AB66FB3205E95D5003B4EA6 /* ModelsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		99EF76B42062BADD008BDFA5 /* AnotherFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EF76AB2062BADC008BDFA5 /* AnotherFeature.framework */; };
@@ -470,6 +471,7 @@
 		0AF9DC22205D7EFA004D9E9F /* UIFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF9DC24205D7EFA004D9E9F /* UIFrameworkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFrameworkSpec.swift; sourceTree = "<group>"; };
 		0AF9DC26205D7EFA004D9E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9929482920654A7600E628A6 /* BeerAppSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAppSpec.swift; sourceTree = "<group>"; };
 		99371005206188E00068815C /* Project.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Project.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9937100720618C3A0068815C /* BeerCatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCatalogPresenter.swift; sourceTree = "<group>"; };
 		99B9E2932061807500E1517F /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
@@ -710,6 +712,7 @@
 			isa = PBXGroup;
 			children = (
 				0A5B699E205D5CBB0029AEE8 /* Info.plist */,
+				9929482920654A7600E628A6 /* BeerAppSpec.swift */,
 			);
 			path = BeersAppTests;
 			sourceTree = "<group>";
@@ -1239,6 +1242,7 @@
 					};
 					0A5B6997205D5CBB0029AEE8 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0A5B6983205D5CBB0029AEE8;
 					};
@@ -1439,6 +1443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9929482A20654A7600E628A6 /* BeerAppSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1856,6 +1861,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5P786SDN2;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1866,6 +1872,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tplioy.BeersAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeersApp.app/BeersApp";
@@ -1877,6 +1884,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5P786SDN2;
 				FRAMEWORK_SEARCH_PATHS = (
