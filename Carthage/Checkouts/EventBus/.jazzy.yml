@@ -1,0 +1,8 @@
+author: Thiago lioy
+author_url: https://twitter.com/tplioy
+github_url: https://github.com/thiagolioy/EventBus
+root_url: https://thiagolioy.github.io/EventBus/
+module: EventBus
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'EventBus.xcworkspace', -scheme, 'EventBus-iOS']

@@ -14,8 +14,8 @@ final class BeerCatalogController: UIViewController {
     let screenView = BeerCatalogScreen()
     let presenter: BeerCatalogPresenter
     
-    init(builder: BeerCatalogPresenterBuilder) {
-        self.presenter = builder.build(with: screenView)
+    init() {
+        self.presenter = BeerCatalogPresenter(screen: screenView)
         super.init(nibName: nil, bundle: nil)
     }
     

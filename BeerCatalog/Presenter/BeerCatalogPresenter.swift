@@ -8,15 +8,11 @@
 
 import Foundation
 import ModelsFramework
-
-protocol BeerCatalogPresenterDelegate: class {
-    func didClickMe()
-    func didSelect(beer: Beer)
-}
+import EventBus
 
 final class BeerCatalogPresenter {
     
-    weak var delegate: BeerCatalogPresenterDelegate?
+    
     let service: BeerService
     let screen: BeerCatalogScreen
     
@@ -26,10 +22,9 @@ final class BeerCatalogPresenter {
         }
     }
     
-    init(screen: BeerCatalogScreen, delegate: BeerCatalogPresenterDelegate,
+    init(screen: BeerCatalogScreen,
          service: BeerService = BeerAPIService()) {
         self.screen = screen
-        self.delegate = delegate
         self.service = service
         
         self.screen.delegate = self
@@ -50,11 +45,13 @@ final class BeerCatalogPresenter {
 
 extension BeerCatalogPresenter: BeerCatalogScreenDelegate {
     func didClickMe() {
-        delegate?.didClickMe()
+        EventBus.shared
+            .emit(event: CatalogEvents.didClickMe)
     }
     
     func didSelectItem(at index: Int) {
         let beer = items[index]
-        delegate?.didSelect(beer: beer)
+        EventBus.shared
+            .emit(event: CatalogEvents.didSelect(beer))
     }
 }

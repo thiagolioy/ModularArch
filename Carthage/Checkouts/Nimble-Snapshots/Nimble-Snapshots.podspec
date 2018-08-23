@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
   s.name         = "Nimble-Snapshots"
-  s.version      = "6.3.0"
-  s.summary      = "Nimble matchers for FBSnapshotTestCase"
+  s.version      = "6.7.1"
+  s.summary      = "Nimble matchers for iOSSnapshotTestCase"
   s.description  = <<-DESC
-                   Nimble matchers for FBSnapshotTestCase. Highly derivative of [Expecta Matchers for FBSnapshotTestCase](https://github.com/dblock/ios-snapshot-test-case-expecta).
+                   Nimble matchers for iOSSnapshotTestCase. Highly derivative of [Expecta Matchers for iOSSnapshotTestCase](https://github.com/dblock/ios-snapshot-test-case-expecta).
                    DESC
   s.homepage     = "https://github.com/ashfurrow/Nimble-Snapshots"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Ash Furrow" => "ash@ashfurrow.com" }
   s.social_media_url   = "http://twitter.com/ashfurrow"
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "8.1"
   s.tvos.deployment_target = "9.0"
   s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
   s.source       = { :git => "https://github.com/ashfurrow/Nimble-Snapshots.git", :tag => s.version }
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.subspec "Core" do |ss|
     ss.source_files  = "*.{h,m,swift}", "DynamicType/*.{swift,m,h}", "DynamicSize/*.{swift}"
-    ss.dependency "FBSnapshotTestCase", "~> 2.0"
+    ss.dependency "iOSSnapshotTestCase", "~> 3.0"
     ss.dependency "Nimble", "~> 7.0"
   end
 

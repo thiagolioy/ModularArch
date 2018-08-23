@@ -2,7 +2,35 @@
 
 ## Next
 
-* Nothing yet!
+- Nothing yet!
+
+## 6.7.1
+
+* Change the images name for XCAttachments based on the origin image's name - @maryam
+
+## 6.7.0
+
+* Add test images to the test results as XCAttachments - @tabend
+
+## 6.6.0
+
+* Add the optional `identifier` for each snapshot function, to be used is there are multiple snapshot tests in a given test method - @Vkt0r
+
+## 6.5.0
+
+* Fix an error causing the project wasn't building with Xcode 9.3 - @Vkt0r
+
+## 6.4.1
+
+* Fix `pod lib lint` warnings in Xcode 9 - @paulz
+
+## 6.4.0
+
+* Migrate from FBSnapshotTestCase to iOSSnapshotTestCase - @freak4pc
+* Update the `README` to use the new iOSSnapshotTestCase - @Vkt0r
+* Update the `Cartfile` to use the latest version of the iOSSnapshotTestCase - @Vkt0r
+* Fixed bug in the iOS9+ first-pass-layout-workaround to check both height and width (was a typo) [#145](https://github.com/ashfurrow/Nimble-Snapshots/issues/145) - @davertay
+
 
 ## 6.3.0
 
@@ -14,7 +42,7 @@
 
 ## 6.2.1
 
-* Fixes Carthage install dependency mismatch – @NachoSoto 
+* Fixes Carthage install dependency mismatch – @NachoSoto
 
 ## 6.2.0
 
